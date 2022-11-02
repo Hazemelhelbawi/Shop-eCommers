@@ -1,0 +1,566 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:black;
+}
+
+html{
+    font-size: 16px;
+
+}
+#loading{
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    z-index: 999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    overflow: hidden;
+
+}
+/* first nav */
+.first-nav a{
+    font-size: 0.8rem;
+    
+}
+.first-nav{
+    transition: all 2s;
+}
+.first-nav  i:hover{
+    color: red !important;
+    transform: rotateY(180deg) ;
+    transition-duration: 2s;
+}
+/* navbar */
+nav .container .nav-icons i{
+    font-size: 1.5rem;
+}
+nav i:hover{
+    color: red !important;
+    transition-duration: 1s;
+}
+nav a:hover{
+    color: red !important;
+    transition-duration: 1s;
+}
+nav .nav-link{
+    color: #000000;
+}
+
+/* section shop */
+.shop{
+    background-color: #16161a !important;
+    width: 100%;
+}
+#name {
+font-family:"Jost",sans-serif;
+ }
+#name span a{
+    color: #CEBD9C !important;
+    border-color: #CEBD9C !important ;
+    transition: all 2s;
+    text-align: center;
+    
+    
+}
+#name span a:hover{
+letter-spacing: 0.1rem;
+
+}
+
+
+/* scrol icons */
+.up-icons{
+    right: 3%;
+    bottom: 3%;
+    z-index: 999999999;
+}
+
+
+
+#upIcon{
+    display: none;
+}
+
+#slider-background .caption-home span{
+    color: #FF2020;
+    font-family: "Clicker Script",cursive;
+    font-size: 3.5rem;
+}
+#slider-background .caption-home h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #292621;
+    font-family: "Jost",sans-serif;
+    margin: auto;
+
+}
+#slider-background .caption-home p{
+    color: #74706B;
+    font-size: 1rem;
+    font-family: "Jost",sans-serif;
+
+}
+#slider-background .caption-home .btn{
+background-color: #292621;
+border: 0.016rem solid #292621;
+font-family: "Jost",sans-serif;
+font-size: 1rem;
+
+}
+
+#slider-background .caption-home .btn:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.slider-background{
+    background-image: url(../image/h1_hero1.jpg);
+    background-position: center center;
+    background-size:cover ;
+}
+.slider-background2{
+    background-image: url(../image/h1_hero2.jpg);
+    background-position: center center;
+    background-size:cover ;
+}
+#slider-background .carousel-control-prev ,.carousel-control-next {
+    width: 3rem;
+    height: 5rem;
+    background: rgba(41,38,33,0.2);
+    position: absolute;   
+    top: 50%; 
+}
+#slider-background .carousel-control-next {
+    width: 3rem;
+    height: 5rem;
+    background: rgba(41,38,33,0.2);
+    position: absolute;   
+    top: 50%; 
+}
+
+
+
+/* fashion section */
+.Fashion{
+    position: absolute;
+    top: 80%;
+    transition: all 1s;
+    z-index: 2;
+    font-family: "Jost",sans-serif;
+}
+.Fashion h6 a {
+    color: #CEBD9C ;
+    border-bottom:#CEBD9C ;
+    opacity: 0;
+    transition: all 2s;
+    
+
+
+}
+.Fashion h6 a:hover{
+    letter-spacing: 0.1rem;
+    
+}
+
+
+
+/* product image shop */
+#product{
+    font-family: "Jost",sans-serif;
+}
+.product-image:hover .Fashion{
+    top:70%
+} 
+.product-image:hover .Fashion h6 a{
+    opacity: 1;
+} 
+.product-image{
+    transform: all 2s;
+}
+.product-image:hover img{
+ transform: scale(1.1);
+ transition-duration: 1s;
+
+}
+.product-inner {
+overflow: hidden;
+
+}
+.product-image img{
+    transform: all 2s;
+
+}
+.product-inner .product-image::before {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    content: "";
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(41,38,33,0) 0%, #292621 100%);
+}
+
+
+
+
+
+/* slider trending section */
+#trending{
+    font-family: "Jost",sans-serif;
+}
+.trending .col-lg-6 .nav {
+    justify-content: end;
+    
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: #FF2020;
+    border-bottom: 0.2rem solid  #FF2020;
+    border-radius: unset;
+}
+.nav-pills .nav-link , .nav-pills .show>.nav-link{
+    background-color: transparent;
+    color: #000000;
+}
+.nav-pills .nav-link:hover{
+    border-bottom: 0.2rem solid  #FF2020;
+    border-radius: unset;
+}
+
+.nav-pills .nav-link.active, .nav-pills{
+
+font-weight: bold;
+font-family: "Jost",sans-serif;
+}
+.trending-title h3{
+    font-family: "Jost",sans-serif;
+    font-size: 2rem;
+}
+.card-name  h3{
+    margin: auto ;
+    text-align: center ;
+}
+#price{
+    color: #cebd9c;
+}
+#true-price{
+    color: #74706b;
+}
+#slider-trending .card ,
+#slider-trending_ .card ,
+#slider-trending__ .card ,
+#slider-trending___ .card{
+    border-radius: unset;
+    border: unset;
+}
+#slider-trending .card img ,
+#slider-trending_ .card img ,
+#slider-trending__ .card img ,
+#slider-trending___ .card img {
+    border-radius: unset;
+    border: unset;
+}
+#slider-trending .card-body a ,
+#slider-trending_ .card-body a ,
+#slider-trending__ .card-body a ,
+#slider-trending___ .card-body a{
+font-size: 1rem;
+}
+#slider-trending .carousel-control-prev ,.carousel-control-next ,
+#slider-trending_ .carousel-control-prev ,.carousel-control-next ,
+#slider-trending__ .carousel-control-prev ,.carousel-control-next ,
+#slider-trending___ .carousel-control-prev ,.carousel-control-next {
+    width: 3rem;
+    height: 5rem;
+    background: transparent;
+    position: absolute;   
+    top: 30%; 
+}
+
+#slider-trending .carousel-control-prev  ,
+#slider-trending_ .carousel-control-prev  ,
+#slider-trending__ .carousel-control-prev  ,
+#slider-trending___ .carousel-control-prev  {
+ 
+    left: 0%; 
+
+}
+#slider-trending .carousel-control-next ,
+#slider-trending_ .carousel-control-next ,
+#slider-trending__ .carousel-control-next ,
+#slider-trending___ .carousel-control-next {
+    right: 0%; 
+
+}
+#slider-trending .carousel-control-next:hover ,
+#slider-trending_ .carousel-control-next:hover ,
+#slider-trending__ .carousel-control-next:hover ,
+#slider-trending___ .carousel-control-next:hover {
+    color: #FF2020;
+    transition-duration: 1s;
+
+}
+.card .card-image{
+    overflow: hidden;
+    transform: all 2s;
+
+}
+.card:hover img{
+    transform: scale(1.05);
+    transition-duration: 1s;
+}
+.card:hover .card-name a{
+    color: #FF2020 !important;
+    transition-duration: 1s;
+}
+.card:hover .card-price #true-price{
+    color: black !important;
+    transition-duration: 1s;
+}
+.icons-card {
+top:60%;
+right:0;
+left:0;
+display: flex;
+opacity: 0;
+transform: all 2s;
+
+}
+.icons-card a {
+font-size: 1.5rem;
+width: 100%;
+color: rgb(36, 36, 36);
+transform: all 2s;
+
+}
+.card:hover .icons-card{
+    opacity: 1;
+    transition-duration: 1s;
+
+}
+.icons-card a:hover  {
+background-color: #FF2020;
+color: white;
+transition-duration: 1s;
+
+}
+#Customer-testimonial button{
+    color: #000000;
+}
+
+/* .slider-image .carousel-control-prev ,.carousel-control-next {
+    width: 3rem;
+    height: 5rem;
+    background: rgba(41,38,33,0.2);
+    position: absolute;   
+    top: 50%; 
+} */
+/* .slider-button .carousel-control-next  {
+    background-color: transparent;
+    top:50%;
+} */
+/* .slider-button #slider-trending .carousel-control-prev,.carousel-control-next   {
+    background-color: transparent;
+    top: 0 !important;
+    bottom: 0;
+} */
+
+
+
+/* Customer Testimonial */
+.testimonial{
+    background-color: #F3EAD8;
+    font-family: "Jost",sans-serif;
+
+}
+.testimonial .customer-body h2{
+    font-size: 2rem;
+    color: #292621;
+    font-weight: 500;
+}
+.testimonial .customer-body p{
+    font-size: 1.4rem;
+    width: 50%;
+    color: #292621;
+
+    font-weight: 400;
+}
+.testimonial .customer-info span{
+    font-size: .9rem;
+    color: #292621;
+    font-weight: 500;
+}
+.testimonial .customer-info p{
+    font-size: 1rem;
+    color: #74706B;
+    font-weight: 500;
+} 
+@media screen and (max-width: 920px) {
+.testimonial .customer-body p {
+    width: 100%;
+}
+}
+
+/* you may like  */
+#may-like{
+    font-family: "Jost",sans-serif;
+}
+#may-like-title h2{
+    font-size: 1.8rem ;
+    line-height: 1.4;
+}
+#slider-card-youlike .card{
+    border-radius: unset;
+    border: unset;
+}
+#slider-card-youlike .card img{
+    border-radius: unset;
+    border: unset;
+}
+#slider-card-youlike .card-body a{
+font-size: 1rem;
+}
+#slider-card-youlike .carousel-control-prev ,.carousel-control-next {
+    width: 3rem;
+    height: 5rem;
+    background: transparent;
+    position: absolute;   
+    top: 30%; 
+}
+
+#slider-card-youlike .carousel-control-prev  {
+ 
+    left: 0%; 
+
+}
+#slider-card-youlike .carousel-control-next {
+    right: 0%; 
+
+}
+#slider-card-youlike .carousel-control-next:hover {
+    color: #FF2020;
+    transition-duration: 1s;
+
+}
+/* Home blog */
+#home-blog{
+    background-color: #f6f6f6;
+    font-family: "Jost",sans-serif;
+}
+#home-blog .card-blog{
+    border-radius: unset;
+    border: unset;
+}
+#home-blog .card-blog img{
+    border-radius: unset;
+    border: unset;
+}
+#home-blog .card-body span,p{
+    color:#74706b;
+}
+#home-blog .card-body h5 a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+#home-blog .card-body  a{
+    color:black;
+    font-weight: 600;
+    transform: all 2s;
+    transition-duration: 1s;
+
+}
+#home-blog span a:hover{
+    letter-spacing: 0.05rem;
+    transition-duration: 1s;
+}
+.card-blog:hover .card-title a{
+    color: #FF2020 !important;
+    transition-duration: 1s;
+}
+/* categories-area */
+.categories-card-body h4{
+    font-size: 1.2rem;
+}
+.categories-card-body p{
+    font-size: 1rem;
+    color: #57667e;
+    font-weight: 400;
+}
+/* footer */
+#footer{
+    font-family: "Jost",sans-serif;
+    background-color: #171613;
+
+}
+/* first footer */
+.btn , .form-control{
+    border-radius: 0;
+    
+}
+.btn{
+    background-color: #FF2020;
+    color: white;
+    border: 0;
+}
+.btn:hover{
+    background-color: #FF2020;
+}
+.form-control{
+color: #000000;
+}
+.icons-brand i{
+    font-size: 2rem;
+    color: #677f8b;
+    transform: all 2s;
+    transition-duration: 2s;
+
+
+}
+.icons-brand i:hover{
+    color: red !important;
+    transform: rotateY(180deg) ;
+    transition-duration: 2s;
+}
+.first-footer::after{
+    content: "";
+    width: 85%;
+    height: 0.08rem;
+    background-color:#585a5c ;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+/* sec footer */
+
+.list-footer a{
+    color: #bbb9b5;
+    text-decoration: none;
+    transform: all 2s;
+    transition-duration: 2s;
+}
+.list-footer a:hover{
+    color: #bbb9b5 !important;
+    text-decoration: underline;
+    letter-spacing: 0.05rem;
+    transition-duration: 2s;
+
+}
+#sec-footer::after{
+    content: "";
+    width: 100%;
+    height: 0.08rem;
+    background-color:#585a5c ;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
